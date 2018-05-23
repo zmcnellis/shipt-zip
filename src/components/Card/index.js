@@ -8,7 +8,7 @@ import './styles.css';
 class Card extends Component {
   render() {
     let imgSrc;
-    switch(Number.parseInt(this.props.step)) {
+    switch(Number.parseInt(this.props.step, 10)) {
       case 1:
         imgSrc = step1;
         break;
@@ -25,7 +25,7 @@ class Card extends Component {
 
     return (
       <article>
-        <img className="article-img" src={imgSrc} />
+        <img className="article-img" src={imgSrc} alt={this.props.title}/>
         <h1 className="article-title">{this.props.title}</h1>
         <p className="article-description">{this.props.description}</p>
       </article>

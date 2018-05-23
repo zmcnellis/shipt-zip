@@ -9,7 +9,7 @@ class Header extends Component {
         <nav>
           <img className="logo" src={logo} alt="logo" />
           <div className="nav-right">
-            <a className="button button-primary" href="#">Sign Up</a>
+            <a className="button button-primary">Sign Up</a>
           </div>
         </nav>
       </header>

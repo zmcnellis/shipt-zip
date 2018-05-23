@@ -9,8 +9,7 @@ class Button extends Component {
         className={
           "button button-primary" +
           (this.props.size === "large" ? " button-lg" : "")
-        }
-        href="#">
+        }>
         {this.props.text}
       </a>
     );

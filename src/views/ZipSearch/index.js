@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../../images/logo.svg';
-import step1 from '../../images/step1.png';
-import step2 from '../../images/step2.png';
-import step3 from '../../images/step3.png';
 import './styles.css';
 import Announcement from '../../components/Announcement';
 import Button from '../../components/Button';
@@ -11,6 +7,7 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import SearchResult from '../../components/SearchResult';
 import Hero from '../../components/Hero';
+import * as api from '../../services/ZipApi'
 
 class ZipSearch extends Component {
 
@@ -21,11 +18,6 @@ class ZipSearch extends Component {
       hasError: false
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleErrors = this.handleErrors.bind(this);
-  }
-
-  isValidZip(zipCode) {
-    return /(^\d{5}$)/.test(zipCode);
   }
 
   displayError() {
@@ -34,50 +26,27 @@ class ZipSearch extends Component {
     });
   }
 
-  handleErrors(response) {
-    if (!response.ok) {
-      throw Error();
-    }
-    return response;
-  }
-
   handleSubmit(zipCode) {
-    if (this.isValidZip(zipCode) === false) {
+    if (api.isValidZip(zipCode) === false) {
       this.displayError();
     }
     else {
-      fetch(`https://shipt-zip-code-test-api.herokuapp.com/api/zip_codes/${zipCode}`)
-          .then(this.handleErrors)
-          .then(results => {
-            return results.json();
-          })
-          .then(data => {
-            this.setState({
-              stores: data.stores,
-              hasError: false
-            });
-          })
-          .catch(error => this.displayError());
+      api.getNearestStores(zipCode)
+        .then(result => {
+          this.setState({
+            stores: result,
+            hasError: false
+          });
+        })
+        .catch(error => {
+          this.displayError();
+        });
     }
-  }
-
-  comparator(storeA, storeB) {
-    const nameA = storeA.name.toUpperCase();
-    const nameB = storeB.name.toUpperCase();
-
-    let comparison = 0;
-    if (nameA > nameB) {
-      comparison = 1;
-    }
-    else if (nameA < nameB) {
-      comparison = -1;
-    }
-    return comparison;
   }
 
   renderSearchResults() {
     let hasSearchResults = this.state.stores.length > 0;
-    let searchResults = !hasSearchResults ? "" : this.state.stores.sort(this.comparator).map(store => <SearchResult id={store.id} name={store.name} date={store.launch_date}/>);
+    let searchResults = !hasSearchResults ? "" : this.state.stores.sort(api.comparator).map(store => <SearchResult id={store.id} name={store.name} date={store.launch_date}/>);
 
     if (hasSearchResults) {
       return (

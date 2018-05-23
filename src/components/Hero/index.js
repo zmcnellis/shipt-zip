@@ -7,12 +7,8 @@ class Hero extends Component {
 
   render() {
     const title = "Target exclusive offer.";
-    const subtitle = "$49 membership (reg. $99) + $15 credit with qualifying \
-      purchase.*";
-    const detail = "*Membership offer valid for new members only. Target order \
-      of $100 or more must be placed to qualify for $15 credit, which expires \
-      30 days after qualifying order is placed and can be applied to any order \
-      from Shipt.";
+    const subtitle = "$49 membership (reg. $99) + $15 credit with qualifying purchase.*";
+    const detail = "*Membership offer valid for new members only. Target order of $100 or more must be placed to qualify for $15 credit, which expires 30 days after qualifying order is placed and can be applied to any order from Shipt.";
 
     return (
       <section className="hero">

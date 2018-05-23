@@ -7,7 +7,7 @@ class SearchResult extends Component {
   formatDate(dateStr) {
     const date = new Date(dateStr);
 
-    if (date - new Date() < 0) {
+    if (date - new Date() <= 0) {
       return "Now Available";
     }
     else {
