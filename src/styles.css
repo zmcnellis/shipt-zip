@@ -1,0 +1,70 @@
+/* Fonts --------------------------------------------------------------------*/
+@font-face {
+  font-family: 'Scandia';
+  src: url('./fonts/Scandia-Regular.eot'),
+       url('./fonts/Scandia-Regular.otf') format('otf'),
+       url('./fonts/Scandia-Regular.woff') format('woff'),
+       url('./fonts/Scandia-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scandia';
+  src: url('./fonts/Scandia-Bold.eot'),
+       url('./fonts/Scandia-Bold.otf') format('otf'),
+       url('./fonts/Scandia-Bold.woff') format('woff'),
+       url('./fonts/Scandia-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Generic styles ------------------------------------------------------------*/
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Scandia';
+  color: #414042;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.small-text {
+  font-size: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.warning {
+  color: #ef7c42;
+}
+
+/* Media queries -------------------------------------------------------------*/
+@media (min-width: 700px) {
+  /* generic styles */
+  .title {
+    font-size: 48px;
+  }
+}

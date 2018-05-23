@@ -1,0 +1,81 @@
+/* Grid styles ---------------------------------------------------------------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+/* Buttons -------------------------------------------------------------------*/
+.button {
+  display: inline-block;
+  height: 48px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 120px;
+  line-height: 48px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+.button.button-primary {
+  background-color: #71b045;
+  color: #fff;
+}
+
+.button.button-lg {
+  width: 320px;
+}
+
+.button.button-primary:hover {
+  background-color: #669933;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+
+/* Cards ---------------------------------------------------------------------*/
+.cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+/* Search results ------------------------------------------------------------*/
+.results-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1080px;
+  justify-content: space-around;
+}
+
+
+.results-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.button-area {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Media queries -------------------------------------------------------------*/
+@media (min-width: 700px) {
+  /* search results */
+  .results-container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* cards */
+  .cards {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}

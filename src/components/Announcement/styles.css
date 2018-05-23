@@ -1,0 +1,21 @@
+/* Announcements -------------------------------------------------------------*/
+.announcement {
+  display: block;
+  text-align: center;
+  background-color: #414042;
+  width: 100%;
+  height: 1.75rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.announcement:hover {
+  background-color: #71b045;
+  transition: all 0.3s ease;
+}
+
+.announcement-text {
+  margin: 0;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}

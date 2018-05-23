@@ -1,0 +1,105 @@
+/* Search --------------------------------------------------------------------*/
+.search-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.search-bar {
+  /* order: 1; */
+  color: #888;
+  background-color: #fff;
+  width: 220px;
+  height: 48px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.search-bar:focus-within {
+  color: #333;
+}
+
+.search-icon {
+  line-height: 48px;
+  width: 10%;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.search-icon-left {
+  float: left;
+}
+
+.search-icon-right {
+  float: right;
+}
+
+.search-field {
+  display: inline-block;
+  width: 80%;
+}
+
+.search-field-input {
+  color: #888;
+  border: 0;
+  font-size: 14px;
+  line-height: 45px;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.search-field-input:focus {
+  color: #333;
+}
+
+.search-field-input.warning:focus {
+  color: #ef7c42;
+}
+
+.search-button {
+  /* order: 3; */
+  width: 100%;
+  margin-top: 14px;
+}
+
+.error-text {
+  /* order: 2; */
+  width: 100%;
+  color: orange;
+  padding-top: 5px;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+/* Media queries -------------------------------------------------------------*/
+@media (min-width: 700px) {
+  /* search */
+  .search-wrapper {
+    flex-direction: row;
+    width: 40%;
+    min-width: 340px;
+  }
+
+  .search-button {
+    width: 32%;
+    margin-top: 0;
+    border-radius: 0 2px 2px 0;
+    /* order: 2; */
+  }
+
+  .search-bar {
+    width: 68%;
+    border-radius: 2px 0 0 2px;
+  }
+}
