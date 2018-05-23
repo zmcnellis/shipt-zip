@@ -1,5 +1,5 @@
 # Shipt ZIP Code Demo
-[https://shipt-zip-zmcnellis.herokuapp.com](https://shipt-zip-zmcnellis.herokuapp.com)
+[https://shipt-zip-demo.herokuapp.com](https://shipt-zip-demo.herokuapp.com)
 
 [![Build Status](https://travis-ci.org/zmcnellis/shipt-zip.svg?branch=master)](https://travis-ci.org/zmcnellis/shipt-zip)
 
