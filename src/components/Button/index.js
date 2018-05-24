@@ -9,7 +9,8 @@ class Button extends Component {
         className={
           "button button-primary" +
           (this.props.size === "large" ? " button-lg" : "")
-        }>
+        }
+        onClick={this.props.onClick}>
         {this.props.text}
       </a>
     );
@@ -18,7 +19,8 @@ class Button extends Component {
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
-  size: PropTypes.oneOf(['normal', 'large'])
+  size: PropTypes.oneOf(['normal', 'large']),
+  onClick: PropTypes.func.isRequired
 };
 
 export default Button;

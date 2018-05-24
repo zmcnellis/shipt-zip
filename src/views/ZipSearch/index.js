@@ -18,6 +18,8 @@ class ZipSearch extends Component {
       hasError: false
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.setSearchReference = this.setSearchReference.bind(this);
+    this.getStartedClick = this.getStartedClick.bind(this);
   }
 
   displayError() {
@@ -44,6 +46,14 @@ class ZipSearch extends Component {
     }
   }
 
+  setSearchReference(ref) {
+    this.searchBox = ref;
+  }
+
+  getStartedClick() {
+    this.searchBox.focus();
+  }
+
   renderSearchResults() {
     let hasSearchResults = this.state.stores.length > 0;
     let searchResults = !hasSearchResults ? "" : this.state.stores.sort(api.comparator).map(store => <SearchResult id={store.id} name={store.name} date={store.launch_date}/>);
@@ -54,7 +64,7 @@ class ZipSearch extends Component {
           <h4 className="results-header">Delivering From:</h4>
           <div className="results-container">{searchResults}</div>
           <div className="button-area">
-            <Button text="Get Started" size="large"/>
+            <Button text="Get Started" size="large" onClick={this.getStartedClick}/>
           </div>
         </section>
       );
@@ -68,7 +78,7 @@ class ZipSearch extends Component {
         <Header/>
 
         <main>
-          <Hero handleSubmit={this.handleSubmit} hasError={this.state.hasError}/>
+          <Hero handleSubmit={this.handleSubmit} hasError={this.state.hasError} setSearchReference={this.setSearchReference}/>
           {this.renderSearchResults()}
 
           <h1 className="text-center">Everything you love about Target at your fingertips.</h1>
@@ -80,7 +90,7 @@ class ZipSearch extends Component {
           </section>
 
           <div className="button-area">
-            <Button text="Get Started" size="large"/>
+            <Button text="Get Started" size="large" onClick={this.getStartedClick}/>
           </div>
         </main>
 

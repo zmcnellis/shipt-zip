@@ -18,7 +18,7 @@ class Hero extends Component {
             <p className="title">{title}</p>
             <p className="subtitle">{subtitle}</p>
 
-            <SearchBar handleSubmit={this.props.handleSubmit} hasError={this.props.hasError}/>
+            <SearchBar handleSubmit={this.props.handleSubmit} hasError={this.props.hasError} setSearchReference={this.props.setSearchReference}/>
 
             <p className="small-text">{detail}</p>
           </div>
@@ -30,7 +30,8 @@ class Hero extends Component {
 
 Hero.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
-  hasError: PropTypes.bool.isRequired
+  hasError: PropTypes.bool.isRequired,
+  setSearchReference: PropTypes.func.isRequired
 };
 
 export default Hero;
