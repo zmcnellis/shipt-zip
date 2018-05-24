@@ -27,6 +27,9 @@ I used the Jest test runner and Enzyme utility to test the React components I bu
 #### Travis CI
 I used the Travis CI tool for continuous integration. This CI tool makes it very simple to view previous builds and easily integrates with GitHub and Node.js. I also integrated my GitHub project with Heroku to automatically deploy the application if all tests succeed.
 
+### CSS Grid and Flexbox
+For styling, I used modern CSS modules such as Flexbox and Grid. CSS Grid Layout and Flexbox are some of the most powerful layout tools available in CSS. Because they are relatively new technologies, some older browsers may not support some of the features. However, I find them extremely useful for quickly building responsive sites and layouts.
+
 #### Font Awesome
 One of the only design libraries I used was Font Awesome. The mockups provided a few icons for the search bar that I instead replaced with Font Awesome icons. The icons are very similar, although I find that the Font Awesome library is easier to use when frequently changing properties such as size and color.
 
