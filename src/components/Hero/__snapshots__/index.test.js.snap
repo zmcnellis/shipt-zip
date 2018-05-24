@@ -7,6 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Hero
     handleSubmit={[Function]}
     hasError={false}
+    setSearchReference={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -43,6 +44,7 @@ ShallowWrapper {
                     <SearchBar
                               handleSubmit={[Function]}
                               hasError={false}
+                              setSearchReference={[Function]}
                     />
                     <p
                               className="small-text"
@@ -88,6 +90,7 @@ ShallowWrapper {
             <SearchBar
                         handleSubmit={[Function]}
                         hasError={false}
+                        setSearchReference={[Function]}
             />
             <p
                         className="small-text"
@@ -117,6 +120,7 @@ ShallowWrapper {
               <SearchBar
                 handleSubmit={[Function]}
                 hasError={false}
+                setSearchReference={[Function]}
 />,
               <p
                 className="small-text"
@@ -159,6 +163,7 @@ ShallowWrapper {
               "props": Object {
                 "handleSubmit": [Function],
                 "hasError": false,
+                "setSearchReference": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -213,6 +218,7 @@ ShallowWrapper {
                         <SearchBar
                                     handleSubmit={[Function]}
                                     hasError={false}
+                                    setSearchReference={[Function]}
                         />
                         <p
                                     className="small-text"
@@ -258,6 +264,7 @@ ShallowWrapper {
               <SearchBar
                             handleSubmit={[Function]}
                             hasError={false}
+                            setSearchReference={[Function]}
               />
               <p
                             className="small-text"
@@ -287,6 +294,7 @@ ShallowWrapper {
                 <SearchBar
                   handleSubmit={[Function]}
                   hasError={false}
+                  setSearchReference={[Function]}
 />,
                 <p
                   className="small-text"
@@ -329,6 +337,7 @@ ShallowWrapper {
                 "props": Object {
                   "handleSubmit": [Function],
                   "hasError": false,
+                  "setSearchReference": [Function],
                 },
                 "ref": null,
                 "rendered": null,

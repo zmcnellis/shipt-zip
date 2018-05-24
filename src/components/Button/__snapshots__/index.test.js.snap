@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
+    onClick={[Function]}
     size="large"
     text="mockText"
 />,
@@ -22,6 +23,7 @@ ShallowWrapper {
     "props": Object {
       "children": "mockText",
       "className": "button button-primary button-lg",
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": "mockText",
@@ -35,6 +37,7 @@ ShallowWrapper {
       "props": Object {
         "children": "mockText",
         "className": "button button-primary button-lg",
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": "mockText",

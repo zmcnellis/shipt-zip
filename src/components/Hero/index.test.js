@@ -6,14 +6,14 @@ import Hero from '.';
 describe('Hero', () => {
   it('should render correctly', () => {
     const output = shallow(
-      <Hero hasError={false} handleSubmit={() => "mock"}/>
+      <Hero hasError={false} handleSubmit={() => "mock"} setSearchReference={() => "mock"}/>
     );
     expect(output).toMatchSnapshot();
   });
 
   it('should have search bar component', () => {
     const output = shallow(
-      <Hero hasError={false} handleSubmit={() => "mock"}/>
+      <Hero hasError={false} handleSubmit={() => "mock"} setSearchReference={() => "mock"}/>
     );
     expect(output.find('SearchBar').exists()).toBeTruthy();
   });

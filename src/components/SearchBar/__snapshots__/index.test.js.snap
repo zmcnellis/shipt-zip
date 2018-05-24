@@ -7,6 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <SearchBar
     handleSubmit={[Function]}
     hasError={false}
+    setSearchReference={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -165,7 +166,7 @@ ShallowWrapper {
                 "placeholder": "Enter ZIP Code",
                 "type": "text",
               },
-              "ref": null,
+              "ref": [Function],
               "rendered": null,
               "type": "input",
             },
@@ -368,7 +369,7 @@ ShallowWrapper {
                   "placeholder": "Enter ZIP Code",
                   "type": "text",
                 },
-                "ref": null,
+                "ref": [Function],
                 "rendered": null,
                 "type": "input",
               },

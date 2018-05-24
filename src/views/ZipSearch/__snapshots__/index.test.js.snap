@@ -24,6 +24,7 @@ ShallowWrapper {
           <Hero
                     handleSubmit={[Function]}
                     hasError={false}
+                    setSearchReference={[Function]}
           />
           <h1
                     className="text-center"
@@ -53,6 +54,7 @@ ShallowWrapper {
                     className="button-area"
           >
                     <Button
+                              onClick={[Function]}
                               size="large"
                               text="Get Started"
                     />
@@ -90,6 +92,7 @@ ShallowWrapper {
             <Hero
               handleSubmit={[Function]}
               hasError={false}
+              setSearchReference={[Function]}
 />,
             undefined,
             <h1
@@ -120,6 +123,7 @@ ShallowWrapper {
               className="button-area"
 >
               <Button
+                            onClick={[Function]}
                             size="large"
                             text="Get Started"
               />
@@ -135,6 +139,7 @@ ShallowWrapper {
             "props": Object {
               "handleSubmit": [Function],
               "hasError": false,
+              "setSearchReference": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -227,6 +232,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <Button
+                onClick={[Function]}
                 size="large"
                 text="Get Started"
 />,
@@ -238,6 +244,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "onClick": [Function],
                 "size": "large",
                 "text": "Get Started",
               },
@@ -275,6 +282,7 @@ ShallowWrapper {
             <Hero
                         handleSubmit={[Function]}
                         hasError={false}
+                        setSearchReference={[Function]}
             />
             <h1
                         className="text-center"
@@ -304,6 +312,7 @@ ShallowWrapper {
                         className="button-area"
             >
                         <Button
+                                    onClick={[Function]}
                                     size="large"
                                     text="Get Started"
                         />
@@ -341,6 +350,7 @@ ShallowWrapper {
               <Hero
                 handleSubmit={[Function]}
                 hasError={false}
+                setSearchReference={[Function]}
 />,
               undefined,
               <h1
@@ -371,6 +381,7 @@ ShallowWrapper {
                 className="button-area"
 >
                 <Button
+                                onClick={[Function]}
                                 size="large"
                                 text="Get Started"
                 />
@@ -386,6 +397,7 @@ ShallowWrapper {
               "props": Object {
                 "handleSubmit": [Function],
                 "hasError": false,
+                "setSearchReference": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -478,6 +490,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <Button
+                  onClick={[Function]}
                   size="large"
                   text="Get Started"
 />,
@@ -489,6 +502,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "onClick": [Function],
                   "size": "large",
                   "text": "Get Started",
                 },
