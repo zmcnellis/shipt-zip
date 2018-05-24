@@ -4,30 +4,34 @@ import './styles.css';
 
 class SearchBar extends Component {
 
+  // store input value in component's state
   constructor(props) {
     super(props);
     this.state = {
       inputValue: ''
     };
-    this.clear = false;
+    this.clearValidationErrors = false; // when typing in the search box, all validation errors should disappear
     this.updateValue = this.updateValue.bind(this);
   }
 
+  // submit search term to parent component for processing
   handleSubmit() {
     this.props.handleSubmit(this.state.inputValue);
-    this.clear = false;
+    this.clearValidationErrors = false;
   }
 
+  // after submitting an invalid zip, any changes to the field should cause the validation errors to disappear
   updateValue(evt) {
     this.setState({
       inputValue: evt.target.value
     });
     if (this.props.hasError)
-      this.clear = true;
+      this.clearValidationErrors = true;
   }
 
+  // display search bar depending on validation error state
   displaySearch() {
-    if (this.props.hasError && !this.clear) {
+    if (this.props.hasError && !this.clearValidationErrors) {
       return (
         <div className="search-wrapper">
           <div className="search-bar">
@@ -66,6 +70,7 @@ class SearchBar extends Component {
     }
   }
 
+  // render
   render() {
     return this.displaySearch();
   }

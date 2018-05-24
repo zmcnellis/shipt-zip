@@ -17,6 +17,7 @@ class Button extends Component {
   }
 }
 
+// currently supports medium and large-sized buttons
 Button.propTypes = {
   text: PropTypes.string.isRequired,
   size: PropTypes.oneOf(['normal', 'large']),

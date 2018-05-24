@@ -9,8 +9,9 @@ import SearchResult from '../../components/SearchResult';
 import Hero from '../../components/Hero';
 import * as api from '../../services/ZipApi'
 
+// main view for the search page
 class ZipSearch extends Component {
-
+  // store api results in state
   constructor(props) {
     super(props);
     this.state = {
@@ -22,13 +23,16 @@ class ZipSearch extends Component {
     this.getStartedClick = this.getStartedClick.bind(this);
   }
 
+  // set the error state to true for validation errors
   displayError() {
     this.setState({
       hasError: true
     });
   }
 
+  // call zip code api when search button is clicked
   handleSubmit(zipCode) {
+    // check if the zip code is in a valid format (5 digits)
     if (api.isValidZip(zipCode) === false) {
       this.displayError();
     }
@@ -46,14 +50,17 @@ class ZipSearch extends Component {
     }
   }
 
+  // keep track of input box reference in order to set focus on button clicks
   setSearchReference(ref) {
     this.searchBox = ref;
   }
 
+  // set the focus of the input box when a "Get Started" button is clicked
   getStartedClick() {
     this.searchBox.focus();
   }
 
+  // render search results after search if no errors
   renderSearchResults() {
     let hasSearchResults = this.state.stores.length > 0;
     let searchResults = !hasSearchResults ? "" : this.state.stores.sort(api.comparator).map(store => <SearchResult id={store.id} name={store.name} date={store.launch_date}/>);
@@ -71,6 +78,7 @@ class ZipSearch extends Component {
     }
   }
 
+  // render components
   render() {
     return (
       <div>

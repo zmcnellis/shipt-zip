@@ -5,7 +5,10 @@ import './styles.css';
 
 class Hero extends Component {
 
+  // render hero at top of page
   render() {
+    // because there can only be one hero, these variables are set here instead of in props
+    // note that this should change if designing a multi page app
     const title = "Target exclusive offer.";
     const subtitle = "$49 membership (reg. $99) + $15 credit with qualifying purchase.*";
     const detail = "*Membership offer valid for new members only. Target order of $100 or more must be placed to qualify for $15 credit, which expires 30 days after qualifying order is placed and can be applied to any order from Shipt.";

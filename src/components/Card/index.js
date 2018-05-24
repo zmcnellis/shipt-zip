@@ -6,7 +6,9 @@ import step3 from '../../images/step3.png';
 import './styles.css';
 
 class Card extends Component {
+
   render() {
+    // set the appropiate src attribute
     let imgSrc;
     switch(Number.parseInt(this.props.step, 10)) {
       case 1:
