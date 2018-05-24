@@ -43,6 +43,7 @@ Tested on the following browsers:
 - Google Chrome v66.0.3359.181
 - Firefox v60.0.1
 - Safari v11
+- Edge 42.17134.1.0
 
 ## Contact
 - Zachary McNellis
