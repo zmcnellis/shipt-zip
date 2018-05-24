@@ -81,7 +81,7 @@ class ZipSearch extends Component {
           <Hero handleSubmit={this.handleSubmit} hasError={this.state.hasError} setSearchReference={this.setSearchReference}/>
           {this.renderSearchResults()}
 
-          <h1 className="text-center">Everything you love about Target at your fingertips.</h1>
+          <h1 className="card-header">Everything you love about Target at your fingertips.</h1>
 
           <section className="cards">
             <Card title="Scroll through the aisles." description="Create an order from your local store in our app or on our website." step="1"/>

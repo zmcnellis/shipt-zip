@@ -38,7 +38,7 @@ class SearchBar extends Component {
               <input ref={(input) => { this.props.setSearchReference(input); }} className="search-field-input warning" name="search" type="text" autoComplete="off" maxLength="5" placeholder="Enter ZIP Code" onChange={evt => this.updateValue(evt)}/>
             </div>
             <div className="search-icon warning search-icon-right">
-              <i className="fas fa-exclamation-triangle"></i>
+              <i className="fas fa-exclamation-circle"></i>
             </div>
           </div>
           <a className="button button-primary search-button" onClick={this.handleSubmit.bind(this)}>Get Started</a>
@@ -57,7 +57,7 @@ class SearchBar extends Component {
               <input ref={(input) => { this.props.setSearchReference(input); }} className="search-field-input" name="search" type="text" autoComplete="off" maxLength="5" placeholder="Enter ZIP Code" onChange={evt => this.updateValue(evt)}/>
             </div>
             <div className="search-icon warning search-icon-right" style={{visibility: 'hidden'}}>
-              <i className="fas fa-exclamation-triangle"></i>
+              <i className="fas fa-exclamation-circle"></i>
             </div>
           </div>
           <a className="button button-primary search-button" onClick={this.handleSubmit.bind(this)}>Get Started</a>

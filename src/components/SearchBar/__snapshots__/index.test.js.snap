@@ -54,7 +54,7 @@ ShallowWrapper {
                     }
           >
                     <i
-                              className="fas fa-exclamation-triangle"
+                              className="fas fa-exclamation-circle"
                     />
           </div>
 </div>,
@@ -104,7 +104,7 @@ ShallowWrapper {
               }
 >
               <i
-                            className="fas fa-exclamation-triangle"
+                            className="fas fa-exclamation-circle"
               />
 </div>,
           ],
@@ -178,7 +178,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <i
-                className="fas fa-exclamation-triangle"
+                className="fas fa-exclamation-circle"
 />,
               "className": "search-icon warning search-icon-right",
               "style": Object {
@@ -191,7 +191,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "className": "fas fa-exclamation-triangle",
+                "className": "fas fa-exclamation-circle",
               },
               "ref": null,
               "rendered": null,
@@ -257,7 +257,7 @@ ShallowWrapper {
                         }
             >
                         <i
-                                    className="fas fa-exclamation-triangle"
+                                    className="fas fa-exclamation-circle"
                         />
             </div>
 </div>,
@@ -307,7 +307,7 @@ ShallowWrapper {
                 }
 >
                 <i
-                                className="fas fa-exclamation-triangle"
+                                className="fas fa-exclamation-circle"
                 />
 </div>,
             ],
@@ -381,7 +381,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <i
-                  className="fas fa-exclamation-triangle"
+                  className="fas fa-exclamation-circle"
 />,
                 "className": "search-icon warning search-icon-right",
                 "style": Object {
@@ -394,7 +394,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "fas fa-exclamation-triangle",
+                  "className": "fas fa-exclamation-circle",
                 },
                 "ref": null,
                 "rendered": null,

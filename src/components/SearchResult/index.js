@@ -5,9 +5,12 @@ import './styles.css';
 class SearchResult extends Component {
 
   formatDate(dateStr) {
-    const date = new Date(dateStr);
+    let date = new Date(dateStr);
+    const currentDate = new Date();
+    const timeZoneDiff = date.getTimezoneOffset() - currentDate.getTimezoneOffset();
+    date.setMinutes(date.getMinutes() + timeZoneDiff);
 
-    if (date - new Date() <= 0) {
+    if (date - currentDate <= 0) {
       return "Now Available";
     }
     else {
